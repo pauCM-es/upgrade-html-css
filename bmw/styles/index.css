@@ -1,0 +1,249 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  font-family: calibri;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-image: url(../assets/images/index.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 50% 0;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-right: 12px solid rgb(255, 255, 255);
+  width: 100vw;
+  height: 900px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* header::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(150deg, transparent 75%, rgba(255, 255, 255, 0.75) 85%, white 93%);
+  width: inherit;
+  height: inherit;
+}
+header::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(180deg, transparent 90%, rgba(255, 255, 255, 0.75) 95%, white 100%);
+  width: inherit;
+  height: inherit;
+} */
+
+header::after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-bottom: 10px solid rgb(255, 255, 255);
+  border-right: 10px solid rgb(255, 255, 255);
+  background: linear-gradient(180deg, transparent 70%, rgba(255, 255, 255, 0.75) 95%, white 100%);
+  border-radius: 0 0 50% 0;  
+  box-shadow: -70px -30px 80px 50px rgb(255, 255, 255) inset;
+}
+
+nav {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+nav::after {
+  content: "";
+  position: absolute;
+  margin-left: 10vw;
+  height: 10vh;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.584);
+  width: 80vw;
+}
+
+#nav__elements {
+  display: flex;
+  width: 60%;
+  padding: 0 20% 0 20%;
+  justify-content: space-around;
+}
+
+.nav__item {
+  display: flex;
+  align-items: center;
+}
+
+.nav__link {
+  color: white
+}
+
+#nav__right {
+  display: flex;
+  width: 40%;
+}
+
+#nav__iconsList {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+#nav__iconsList div {
+  width: fit-content;
+}
+
+.nav__icon {
+  width: 2rem;
+  margin: 0 1rem;
+}
+
+#logo {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3rem;
+}
+
+#logo img {
+  width: 60%;
+  border-radius: 50%;
+}
+
+#header__title {
+ align-self: flex-end;
+ padding-left: 100px; 
+ display: flex;
+ flex-direction: column;
+ margin-bottom: 2rem;
+ z-index: 3;
+}
+
+#header__title h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: white;
+
+}
+
+#header__caption {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+#header__link {
+  width: fit-content;
+  margin: 0.5rem 0;
+  padding: 1rem 4rem;
+  background-color: #1c68d5;
+  color: white;
+  border-radius: 2px;
+  border: none;
+  font-size: 1.2rem;
+}
+
+main{
+  width: 100vw;
+  min-width: 390px;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#models {
+  margin: 200px auto;
+}
+
+.models__nav {
+  display: block;
+}
+
+.models__list {
+  display: flex;
+  margin-bottom: 1.5rem;  
+  height: 3rem;
+}
+.models__item {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(195, 195, 195);
+  padding: 0.5rem 1.5rem;
+}
+
+.models__item:hover {
+  font-size: 2rem;
+  color: black;
+  border-bottom: 3px solid #1c68d5;
+}
+
+#nav__type-elements {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* CAR MODELS GALERY */
+.models__galery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/*--- CAR ITEM  */
+.car__item {
+  width: 300px;
+  padding: 20px;
+}
+
+.car__item figure {
+  object-fit: contain;
+}
+
+.car__name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.car__price {
+  font-size: 1.2rem;
+  color: grey;
+  margin-bottom: 1rem;
+}
+.car__price::after {
+  content: "i";
+  font-family: 'Courier New', Courier, monospace;
+  border: 1px solid grey;
+  padding: 0 0.4rem;
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+
+.action {
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.action::before {
+  content: ">";
+}
+
+.action:hover, .action a:hover {
+  color: #1c68d5;
+}
+
