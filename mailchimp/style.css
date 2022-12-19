@@ -1,0 +1,123 @@
+body {
+  display: flex;
+  justify-content: center;
+  
+}
+
+#logo {
+  width: 20%;
+  margin-right: 5%;
+  max-width: 250px;
+}
+
+img {
+ width: 100%;
+}
+
+main {
+  width: 60%;
+  min-width: 550px;
+  max-width: 550px;
+  font-family: poppins, roboto, sans-serif;
+  font-size: 0.8rem;
+}
+
+h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2rem;
+}
+
+.logIn {
+  text-decoration: none;
+}
+
+label {
+  font-weight: 600;
+}
+
+input {
+  width: 98%;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.2rem;
+  border-radius: 3px;
+  border: 2px solid rgb(197, 197, 197);
+}
+
+.inputBlock {
+  height: 5rem;
+}
+
+#labelPassword {
+  display: inline-block;
+}
+
+#eye {
+  display: inline-block;
+  width: 20%;
+  height: fit-content;
+  margin-left: 65%;
+}
+
+#eye i {
+  padding-left: 50%;
+}
+
+#eye p {
+  display: inline-block;
+}
+
+.colorResalte {
+  color: rgb(47, 145, 177);
+}
+
+
+.bullets {
+  display: flex;
+  align-content: flex-start;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  display: inline-block;
+  height: 100%;
+  width: 50%;
+  margin-top: 0;
+  padding-left: 1rem;
+}
+
+li span {
+  color: black;
+}
+
+#check {
+  display: inline-block;
+}
+
+#check button {
+  display: inline-block;
+  background-color: white;
+  padding: .5rem 1.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+  margin-right: 2rem;
+  align-self:flex-end;
+  
+}
+#check span {
+  margin: auto;
+}
+
+#check span input {
+  max-width: fit-content;
+}
+
+#check span p {
+  display: inline-block;
+  margin-right: 0;
+  max-width: 60%;
+}
+
+
+
