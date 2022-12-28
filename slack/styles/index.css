@@ -1,4 +1,4 @@
-.hero-trust__btn, .billboard-register__btn {
+.hero-signup__btn, .hero-trust__btn, .billboard-register__btn {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 600;
@@ -10,7 +10,7 @@
   height: 55px;
   width: 100%;
   margin: 4px 0;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 * {
@@ -26,7 +26,8 @@ a {
 
 #root {
   width: 100vw;
-  font-family: Calibri;
+  font-family: Calibri, "Helvetica neue";
+  overflow-x: hidden;
 }
 
 h2 {
@@ -302,7 +303,7 @@ p, a {
   font-size: 26px;
   line-height: 1.8rem;
   text-align: center;
-  margin: 15px 0;
+  margin: 15px 10px;
 }
 .hero-features .features-card {
   width: 300px;
@@ -347,7 +348,7 @@ p, a {
   margin: 1rem 0;
   display: flex;
   justify-content: space-evenly;
-  margin: 2rem auto 0.5rem;
+  margin: 2rem auto 0;
 }
 .hero-features .features-slider__dot {
   width: 15px;
@@ -359,9 +360,101 @@ p, a {
   background-color: #541554;
 }
 .hero-signup {
+  background-color: #541554;
+  color: white;
+  padding: 2rem 10px 4rem !important;
+  -webkit-clip-path: ellipse(95% 80% at 50% 20%);
+          clip-path: ellipse(95% 80% at 50% 20%);
+}
+.hero-signup h2 {
+  margin-top: 2rem;
+  padding: 0 1rem;
+  font-size: 2rem;
+  letter-spacing: -2px;
+  word-spacing: -2px;
+  font-family: "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+.hero-signup__buttons {
+  margin: 2rem 1rem;
+  display: grid;
+  gap: 0.5rem;
+}
+.hero-signup__btn:first-child {
   background-color: white;
+  border: 1px solid #541554;
+  color: #541554;
+}
+.hero-signup__btn:last-child {
+  background-color: #541554;
+  border: 1px solid white;
+  color: white;
 }
 
 .footer {
   background-color: white;
+  padding: 4rem 1rem 2rem;
+}
+.footer-FAQ {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+.footer-FAQ::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 90%;
+  background-color: rgb(235, 234, 235);
+  margin-top: 1rem;
+}
+.footer-FAQ .FAQ-block h4 {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-FAQ .FAQ-block h4::after {
+  content: url(../assets/icons/chrevron_right.svg);
+  padding-right: 0.5rem;
+}
+.footer-FAQ .FAQ-list {
+  display: none;
+}
+.footer-legal .legal-list {
+  list-style: none;
+}
+.footer-legal .legal-list__item {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+.footer-legal .legal-list__item svg {
+  align-self: center;
+  margin-right: 5px;
+}
+.footer-legal .legal-list__chevron-icon {
+  margin-left: 5px;
+}
+.footer-legal .legal-social {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+.footer-legal .legal-download__link {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+}
+.footer-legal .legal-download__link svg {
+  align-self: center;
+  margin-right: 5px;
+}
+.footer-caption p {
+  font-size: 12px;
+  color: #424542;
+  line-height: 1.2rem;
 }/*# sourceMappingURL=index.css.map */

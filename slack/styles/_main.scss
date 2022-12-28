@@ -214,7 +214,7 @@
       font-size: 26px;
       line-height: 1.8rem;
       text-align: center;
-      margin: 15px 0;
+      margin: 15px 10px;
     }
 
     
@@ -266,7 +266,7 @@
       margin: 1rem 0;
       display: flex;
       justify-content: space-evenly;
-      margin: 2rem auto 0.5rem;
+      margin: 2rem auto 0;
 
       &__dot {
         width: 15px;
@@ -284,10 +284,41 @@
   }
 
   &-signup {
-    background-color: $bg-2-color;
+    background-color: $primary-color;
+    color: white;
+    padding: 2rem 10px 4rem !important;
+    clip-path: ellipse(95% 80%  at 50% 20%);
+
+    h2 {
+      margin-top: 2rem;
+      padding: 0 1rem;
+      font-size: 2rem;
+      letter-spacing: -2px;
+      word-spacing: -2px;
+      font-family: "Helvetica Neue", sans-serif;
+      text-align: center;
+    }
+
+    &__buttons {
+      margin: 2rem 1rem;
+      display: grid;
+      gap: 0.5rem;
+    }
+
+    &__btn {
+      @extend %btn;
+
+      &:first-child{
+        background-color: white;
+        border: 1px solid $primary-color;
+        color: $primary-color;
+      }
+      &:last-child{
+        background-color: $primary-color;
+        border: 1px solid white;
+        color: white;
+      }
+    }
+
   }
-
 }
-
-
-
