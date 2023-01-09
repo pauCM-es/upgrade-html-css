@@ -1,6 +1,13 @@
 
 .header {
   background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1345px;
+  justify-self: center;
 }
 
 .nav {
@@ -17,6 +24,23 @@
       height: 35px;
       margin-left: 20px;
       align-self: center;
+    }
+  }
+
+  &__list {
+    width: fit-content;
+    list-style: none;
+    display: none;
+    align-items: center;
+    margin-left: 2rem;
+
+    &--items {
+      padding: 0 1rem 0 0;
+      
+      a{
+        color: white;
+        font-size: 16px;
+      }
     }
   }
 
@@ -102,11 +126,16 @@
       }
         
       //GOOGLE BUTTON
-      &:last-child {
+      &.google {
         background-color: $accent-2-color;
         color: white;
       }
     }
+
+    p{
+      display: none;
+    }
+
   }
 
     .google__icon {

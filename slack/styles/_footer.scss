@@ -1,7 +1,8 @@
 .footer {
   background-color: $bg-2-color;
   padding: 4rem 1rem 2rem;
-
+  display: flex;
+  justify-content: center;
   // &__logo {
 
   // }
@@ -36,6 +37,19 @@
 
       &-list {
         display: none;
+        list-style: none;
+
+        &__item {
+          margin: 0.6rem 0;
+        }
+        
+        a {
+          color: #424542;
+          font-size: 14px;
+          &:hover {
+            color: #1264a3;
+          }
+        }
       }
     }
   }
@@ -86,9 +100,14 @@
 
   }
 
-  &-caption p {
-    font-size: 12px;
+  &-caption {
+    width: 100%;
+    p {
+    font-size: 14px;
     color: #424542;
     line-height: 1.2rem;
+    }
   }
+  
+
 }

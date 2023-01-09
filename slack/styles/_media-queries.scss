@@ -1,0 +1,347 @@
+@media (min-width: 480px) {
+  .footer {
+    .container{
+      width: 100%;
+    }
+
+    &__logo {
+      width: 15%;
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+
+    &-FAQ {
+      display: grid;
+      grid-template-rows: 2;
+      grid-template-columns: 1fr 1fr 1fr;
+      &::after {
+        max-width: 1345px;
+        display: none;
+      }
+
+      h4 {
+        &::after {
+          display: none;
+        }
+      }
+
+      .FAQ-block {
+        word-wrap: break-word;
+        height: fit-content;
+      }
+
+      .FAQ-list {
+        display: flex;
+        flex-direction: column;
+        
+      }
+    }
+
+    &-legal {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+
+    }
+
+    &-caption p {
+      text-align: left;
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  
+
+
+  .billboard {
+    display: flex;
+    flex-direction: row;
+
+    &-content {
+      width: 55%;
+    }
+    &__graphic {
+      width: 45%;
+      video {
+        width: 100%;
+      }
+    }
+
+    &__title {
+      text-align: left;
+    }
+    &__caption {
+      text-align: left;
+    }
+    
+    &-register p {
+      display: flex;
+    }
+  
+  }
+
+  .hero {
+    &-trust {
+      &__buttons {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+
+      &__statistics {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 3rem 0;
+      }
+    }
+
+    &-features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-bottom: 2rem;
+      
+      .features-cards {
+        width: fit-content;
+        max-width: 850px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem 1rem;
+        justify-content: center;
+      }
+
+      h2 {
+        width: 100%;
+      }
+      
+      .features-card {
+        margin: 0;
+      }
+
+      .card-2 {
+        display: flex;
+      }
+
+      .features-slider {
+        display: none;
+      }
+    }
+
+
+  }
+
+  .footer {
+    .container {
+      padding: 0 2rem;
+    }
+
+    .legal-list {
+      display: flex;
+      justify-content: flex-start;
+
+      &__item {
+        padding: 0 0.5rem 0 0;
+      }
+    }
+
+    .legal-download__link {
+      justify-content: flex-start;
+    }
+
+    .legal-social {
+      justify-self: flex-end;
+      justify-content: flex-start;
+
+      &__icon {
+        padding: 0 0.5rem;
+      }
+    }
+  }
+
+}
+
+@media (min-width: 1025px) {
+
+
+  .hero-trust__content h2 {
+    font-size: 50px;
+  }
+
+  .hero {
+    &-block .container{
+      display: flex;
+      flex-direction: row;
+      height: 345px;
+      justify-content: space-between;
+      max-width: 1230px;
+      max-height: 350px;
+      margin: 0 auto;
+
+      .hero__content {
+        width: 42%;
+      }
+
+      .hero__img {
+        width: 43%;
+        height: inherit;
+      }
+
+    }
+    &-comunication .container {
+      flex-direction: row-reverse;
+    }
+
+    &-features .container {
+      
+      .features-cards {
+        max-width: 1230px;
+      }
+
+      .features-card {
+        width: 220px;
+      }
+    }
+
+    &-testimonial {
+      .container {
+        flex-direction: row;
+      }
+
+      .testimonial {
+        flex-direction: row;
+
+        &__video {
+          width: 50%;
+          video {
+            width: 100%;
+            // aspect-ratio: 1/2;
+            border-radius: 0 500px 500px 0;;
+          }
+        }
+
+        &__quote {
+          width: 50%;
+          margin: 0;
+          display: flex;
+          flex-direction: column; 
+          justify-content: center;
+          padding: 2rem;
+        }
+
+        &__caption {
+          width: 100%;
+          padding-bottom: 2rem;
+        }
+      }
+    }
+
+    &-signup {
+      &__buttons {
+        display: flex;
+        &__btn {
+          padding: 0 3rem;
+          width: fit-content
+        }
+      }
+    }
+
+  }
+
+  .footer {
+    .container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    &__logo {
+      width: 15%;
+      margin: 2rem 0;
+    }
+
+    &-FAQ {
+      width: 85%;
+      display: flex;
+      &::after {
+        max-width: 1345px;
+        display: none;
+      }
+
+      h4 {
+        &::after {
+          display: none;
+        }
+      }
+
+      .FAQ-block {
+        width: 20%;
+        word-wrap: break-word;
+      }
+
+      .FAQ-list {
+        display: flex;
+        flex-direction: column;
+        
+      }
+    }
+  }
+
+}
+
+@media (min-width: 1080px) {
+  .nav {
+    justify-content: flex-start;
+
+    &__list {
+      display: flex;
+    }
+    
+    &__hamburger {
+      display: none;
+    }
+    
+  }
+
+  .footer {
+    &-legal {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .legal-list {
+        width: 65%;
+        display: flex;
+        justify-content: space-between;
+
+        &__item {
+          padding: 0 ;
+          font-size: 14px;
+          margin: auto 0;
+        }
+      }
+
+      .legal-download__link {
+        width: 15%;
+        font-size: 14px;
+        margin: auto 0;
+
+      }
+
+      .legal-social {
+        width: 15%;
+        justify-content: space-between;
+        justify-self: flex-end;
+        &__icon {
+          padding: 0;
+        }
+      }
+    }
+
+  }
+
+}

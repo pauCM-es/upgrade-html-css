@@ -1,7 +1,7 @@
 
 .hero {
 
-  section {
+  &-block {
   padding: 2rem 0;
   display: flex;
   flex-direction: column;
@@ -41,6 +41,8 @@
 
   &-companies {
     background-color: $bg-1-color;
+    display: flex;
+    justify-content: center;
 
     & h2 {
       font-size: 1rem;
@@ -75,7 +77,11 @@
 
   &-channels {
     background-color: $bg-1-color;
-
+    display: flex;
+    justify-content: center;
+    .container {
+      width: 100%;
+    }
     .hero__img {
       background-color: $other-1-color;
     }
@@ -83,7 +89,11 @@
 
   &-comunication {
     background-color: $bg-1-color;
-
+    display: flex;
+    justify-content: center;
+    .container {
+      width: 100%;
+    }
     .hero__img {
       background-color: $other-2-color;
     }
@@ -91,7 +101,11 @@
 
   &-tools {
     background-color: $bg-1-color;
-
+    display: flex;
+    justify-content: center;
+    .container {
+      width: 100%;
+    }
     .hero__img {
       background-color: $accent-1-color;
     }
@@ -99,9 +113,12 @@
 
   &-trust {
     background-color: $bg-2-color;
+    display: flex;
+    justify-content: center;
 
     &__content {
       margin: 1rem 1rem;
+      max-width: 768px;
       
       h2 {
         margin: 1rem;
@@ -118,10 +135,12 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
+      align-items: center
     }
     
     &__btn {
       @extend %btn;
+      max-width: 330px;
 
       &:first-child{
         background-color: $primary-color;
@@ -163,20 +182,30 @@
 
   &-testimonial {
     background-color: $bg-2-color;
+    display: flex;
+    justify-content: center;
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
 
     .testimonial {
 
       &__video {
         width: 98%;
-
+        
         video {
           width: inherit;
-          border-radius: 0 100px 100px 0;
+          height: inherit;
+          border-radius: 0 200px 200px 0;
         }
       }
 
       &__quote {
         margin: 4rem 2rem 0;
+        padding-bottom: 2rem;
         
         blockquote {
           font-size: 22px;
@@ -199,7 +228,7 @@
       }
 
       &__caption {
-        margin: 80px 1rem  0 1rem;
+        margin: 80px 1rem  1rem 1rem;
         text-align: center;
         font-size: 15px;
         color: #5b6776;
@@ -209,35 +238,37 @@
 
   &-features {
     background-color: $bg-1-color;
-
+    display: flex;
+    justify-content: center;
     h2 {
       font-size: 26px;
       line-height: 1.8rem;
       text-align: center;
       margin: 15px 10px;
+      padding-top: 1rem;
     }
 
     
     .features-card {
       width: 300px;
       background-color: white;
-      display: flex;  
+      display: flex;
       flex-direction: column;
       align-items: center;
       padding-bottom: 10px;
       margin: 0 auto;
       
       &__img {
-        width: 280px;
+        width: 90%;
         margin: 10px 0;
         
         img {
-          width: inherit;
+          width: 100%;
         }
       }
 
       &__content {
-        width: 280px;
+        width: 90%;
 
         p {
           font-size: 16px;
@@ -260,6 +291,10 @@
       }
     }
 
+    .card-2 {
+      display: none;
+    }
+
     .features-slider {
       width: 150px;
       height: fit-content;
@@ -267,6 +302,7 @@
       display: flex;
       justify-content: space-evenly;
       margin: 2rem auto 0;
+      padding-bottom: 1rem;
 
       &__dot {
         width: 15px;
@@ -285,6 +321,8 @@
 
   &-signup {
     background-color: $primary-color;
+    display: flex;
+    justify-content: center;
     color: white;
     padding: 2rem 10px 4rem !important;
     clip-path: ellipse(95% 80%  at 50% 20%);
